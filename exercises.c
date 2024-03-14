@@ -68,8 +68,6 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
 
-
-
   for (int i = 0; i < size; i++)
   {
     if (arr[i] < arr[i + 1])
@@ -79,7 +77,7 @@ int checkSorted(int arr[], int size) {
     else
       return 0;
   }
-}
+
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
