@@ -1,4 +1,4 @@
-a #include <ctype.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,14 +9,37 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
 
-/*
+int findMax(int arr[], int size) { 
+
+  int max = arr[0];
+
+  for (int i = 1; i < size; i++)
+    if (arr[i] > max)
+      max = arr[i];
+  
+  return max;
+  }
+
+/* 
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) {
+
+  int i;
+
+  for (i; i < size; i++)
+  {
+    arra[i] = arr[size - 1 - i];
+  }
+
+  for (i; i < size; i++))
+  {
+    printf(" %d", arr[i]);
+  
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -43,7 +66,22 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) { 
+
+  int i = 0;
+
+  for (i; i < size; i++)
+    {
+
+      if (arr[i] < arr[i + 1])
+        return 1;
+      else if (arr[i] > arr[i + 1])
+        return -1;
+
+      else
+        return 0;
+    }
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
