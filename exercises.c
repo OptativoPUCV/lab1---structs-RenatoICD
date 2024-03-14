@@ -20,7 +20,7 @@ int findMax(int arr[], int size) {
   
   return max;
   }
-
+}
 /* 
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
@@ -79,7 +79,7 @@ int checkSorted(int arr[], int size) {
     else
       return 0;
   }
-
+}
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
