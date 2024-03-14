@@ -71,17 +71,14 @@ int checkSorted(int arr[], int size) {
   int i = 0;
 
   for (i; i < size; i++)
-    {
-
-      if (arr[i] < arr[i + 1])
-        return 1;
-      else if (arr[i] > arr[i + 1])
-        return -1;
-
-      else
-        return 0;
-    }
-}
+  {
+    if (arr[i] < arr[i + 1])
+      return 1;
+    else if (arr[i] > arr[i + 1])
+      return -1;
+    else
+      return 0;
+  }
 
 /*
 Ejercicio 6: Información de una Biblioteca
