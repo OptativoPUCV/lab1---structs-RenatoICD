@@ -32,13 +32,13 @@ void reverseArray(int arr[], int size) {
 
   for (i; i < size; i++)
   {
-    arra[i] = arr[size - 1 - i];
+    arr[i] = arr[size - 1 - i];
   }
 
-  for (i; i < size; i++))
+  for (i; i < size; i++)
   {
     printf(" %d", arr[i]);
-  
+  }
 }
 
 /*
