@@ -28,17 +28,17 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
 
-  int i = 0;
+  // int i = 0;
 
-  for (i; i < size; i++)
-  {
-    arr[i] = arr[size - 1 - i];
-  }
+  // for (i; i < size; i++)
+  // {
+  //   arr[i] = arr[size - 1 - i];
+  // }
 
-  for (i; i < size; i++)
-  {
-    printf(" %d", arr[i]);
-  }
+  // for (i; i < size; i++)
+  // {
+  //   printf(" %d", arr[i]);
+  // }
 }
 
 /*
