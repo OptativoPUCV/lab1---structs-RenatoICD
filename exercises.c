@@ -16,7 +16,9 @@ int findMax(int arr[], int size)
   int max = arr[0];
 
   for (int i = 1; i < size; i++)
+    
     if (arr[i] > max)
+      
       max = arr[i];
   
   return max;
@@ -28,17 +30,12 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
 
-  // int i = 0;
-
-  // for (i; i < size; i++)
-  // {
-  //   arr[i] = arr[size - 1 - i];
-  // }
-
-  // for (i; i < size; i++)
-  // {
-  //   printf(" %d", arr[i]);
-  // }
+  for (int i = 0; i < size / 2; i++) {
+    
+    int temp = arr[i];
+    arr[i] = arr[size - 1 - i];
+    arr[size - 1 - i] = temp;
+  }
 }
 
 /*
