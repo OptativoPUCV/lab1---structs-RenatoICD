@@ -368,3 +368,19 @@ exercises.c:65:28: note: previous definition of ‘result’ with type ‘int *�
       |                        ~~~~^~~~~~~~
 Compilation failed
 99935e0
+Mon 18 Mar 2024 10:35:28 AM UTC: 
+ exercises.c | 5 -----
+ 1 file changed, 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:66:17: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   66 |   int newsize = size + size2;
+      |                 ^~~~
+      |                 size2
+exercises.c:66:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:66:7: error: unused variable ‘newsize’ [-Werror=unused-variable]
+   66 |   int newsize = size + size2;
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+19375a4
