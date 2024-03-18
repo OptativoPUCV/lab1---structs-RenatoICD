@@ -350,3 +350,21 @@ exercises.c:64:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 82ba4d4
+Mon 18 Mar 2024 10:35:07 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:66:17: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   66 |   int newsize = size + size2;
+      |                 ^~~~
+      |                 size2
+exercises.c:66:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:67:8: error: ‘result’ redeclared as different kind of symbol
+   67 |   int* result = (int *) malloc(newsize * sizeof(int));
+      |        ^~~~~~
+exercises.c:65:28: note: previous definition of ‘result’ with type ‘int *’
+   65 |                        int result[]) {
+      |                        ~~~~^~~~~~~~
+Compilation failed
+99935e0
