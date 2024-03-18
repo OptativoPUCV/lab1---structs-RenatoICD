@@ -53,11 +53,12 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     {
       if (arr[i] % 2 == 0)
         {
-          (*newSize++);
+          (*newSize)++;
         }
     }
   
   int *nuevoArreglo = (int *)malloc((*newSize) * sizeof(int));
+  
   if (nuevoArreglo == NULL) {
       // La asignación de memoria falló
       return NULL;
@@ -65,7 +66,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int j = 0;
   for (int i = 0; i < size; i++) {
       if (arr[i] % 2 == 0) {
-            nuevoArreglo[j++] = arr[i];
+          nuevoArreglo[j++] = arr[i];
       }
   }
 

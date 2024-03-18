@@ -941,3 +941,9 @@ exercises.c:56:12: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 3b5548a
+Mon 18 Mar 2024 11:38:07 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+fdbdaba
