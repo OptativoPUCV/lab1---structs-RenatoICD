@@ -396,3 +396,9 @@ exercises.c:69:14: error: ‘size’ undeclared (first use in this function); di
 exercises.c:69:14: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 cb2f5ea
+Mon 18 Mar 2024 10:36:05 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+36ef544
