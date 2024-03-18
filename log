@@ -975,3 +975,9 @@ exercises.c:154:15: error: expected ‘)’ before ‘->’ token
       |               )
 Compilation failed
 1521192
+Mon 18 Mar 2024 03:35:21 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|1
+total_score: 60/70
+d8d7276
