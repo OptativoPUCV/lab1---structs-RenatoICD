@@ -65,11 +65,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       }
   }
 
-  return nuevoArreglo;
-  
-  
-  
-  return newArr; 
+  return nuevoArreglo; 
 
 }
 
