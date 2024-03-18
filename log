@@ -930,3 +930,14 @@ exercises.c:68:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 a19df4a
+Mon 18 Mar 2024 11:37:42 AM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:56:12: error: value computed is not used [-Werror=unused-value]
+   56 |           (*newSize++);
+      |           ~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3b5548a
