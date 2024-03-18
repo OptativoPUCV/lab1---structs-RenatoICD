@@ -92,13 +92,17 @@ int checkSorted(int arr[], int size) {
 
   int cont1 = 0;
   int cont2 = 0;
+  int iguales = 0
   
   for (int i = 0; i < size - 1; i++)
   {
-      if (arr[i] <= arr[i + 1])
+      if (arr[i] < arr[i + 1])
           cont1++;
-      else
+      else if (arr[i] > arr[i + 1])
           cont2++;
+      else
+          iguales++;
+    
   }
 
   if (cont1 == size - 1) return 1;

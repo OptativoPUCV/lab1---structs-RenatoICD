@@ -426,3 +426,22 @@ Mon 18 Mar 2024 10:42:04 AM UTC:
  tests:  0|4
 total_score: 30/70
 c185bb2
+Mon 18 Mar 2024 10:43:33 AM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:97:3: error: expected ‘,’ or ‘;’ before ‘for’
+   97 |   for (int i = 0; i < size - 1; i++)
+      |   ^~~
+exercises.c:97:19: error: ‘i’ undeclared (first use in this function)
+   97 |   for (int i = 0; i < size - 1; i++)
+      |                   ^
+exercises.c:97:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:97:36: error: expected ‘;’ before ‘)’ token
+   97 |   for (int i = 0; i < size - 1; i++)
+      |                                    ^
+      |                                    ;
+exercises.c:97:36: error: expected statement before ‘)’ token
+Compilation failed
+3bcdf6c
