@@ -612,3 +612,33 @@ exercises.c:132:68: note: expected ‘char’ but argument is of type ‘const c
 cc1: all warnings being treated as errors
 Compilation failed
 c1d174c
+Mon 18 Mar 2024 10:57:56 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:136:31: error: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+  136 |   strcpy(libro->autor.nombre, nombreAutor);
+      |                               ^~~~~~~~~~~
+      |                               |
+      |                               char
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: expected ‘const char * restrict’ but argument is of type ‘char’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+test.c: In function ‘test_biblioteca’:
+test.c:306:49: error: passing argument 3 of ‘inicializarLibro’ makes integer from pointer without a cast [-Werror=int-conversion]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |                                          ~~~~~~~^~~
+      |                                                 |
+      |                                                 const char *
+In file included from test.c:1:
+exercises.c:132:68: note: expected ‘char’ but argument is of type ‘const char *’
+  132 | void inicializarLibro(Libro *libro, const char *titulo, const char nombreAutor, int anioNacimiento, int anioPublicacion) {
+      |                                                         ~~~~~~~~~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bc9d358
