@@ -80,10 +80,10 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       }
   }
   while (i < size) {
-        result[k++] = arreglo[i++];
+        result[k++] = arr1[i++];
   }
   while (j < size2) {
-        result[k++] = arreglo2[j++];
+        result[k++] = arr2[j++];
   }
 
 }
