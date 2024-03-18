@@ -959,3 +959,9 @@ Mon 18 Mar 2024 11:40:08 AM UTC:
  tests:  0|2
 total_score: 50/70
 fcfc791
+Mon 18 Mar 2024 11:49:30 AM UTC: 
+ exercises.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+4373c00
