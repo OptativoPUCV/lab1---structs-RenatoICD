@@ -786,3 +786,28 @@ exercises.c:144:68: note: expected ‘char’ but argument is of type ‘const c
 cc1: all warnings being treated as errors
 Compilation failed
 148f5c6
+Mon 18 Mar 2024 11:27:40 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_biblioteca’:
+test.c:306:49: error: passing argument 3 of ‘inicializarLibro’ makes integer from pointer without a cast [-Werror=int-conversion]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |                                          ~~~~~~~^~~
+      |                                                 |
+      |                                                 const char *
+In file included from test.c:1:
+exercises.c:144:68: note: expected ‘char’ but argument is of type ‘const char *’
+  144 | void inicializarLibro(Libro *libro, const char *titulo, const char nombreAutor, int anioNacimiento, int *anioPublicacion) {}
+      |                                                         ~~~~~~~~~~~^~~~~~~~~~~
+test.c:307:38: error: passing argument 5 of ‘inicializarLibro’ makes pointer from integer without a cast [-Werror=int-conversion]
+  307 |                      aniosPublicacion[i]);
+      |                      ~~~~~~~~~~~~~~~~^~~
+      |                                      |
+      |                                      int
+In file included from test.c:1:
+exercises.c:144:106: note: expected ‘int *’ but argument is of type ‘int’
+  144 | void inicializarLibro(Libro *libro, const char *titulo, const char nombreAutor, int anioNacimiento, int *anioPublicacion) {}
+      |                                                                                                     ~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3bfea28
