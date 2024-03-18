@@ -294,3 +294,34 @@ Fri 15 Mar 2024 01:22:22 AM UTC:
  tests:  0|5
 total_score: 20/70
 f6df873
+Mon 18 Mar 2024 10:34:50 AM UTC: 
+ exercises.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:66:17: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   66 |   int newsize = size + size2;
+      |                 ^~~~
+      |                 size2
+exercises.c:66:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:67:8: error: ‘result’ redeclared as different kind of symbol
+   67 |   int* result = (int *) malloc(newsize * sizeof(int));
+      |        ^~~~~~
+exercises.c:65:28: note: previous definition of ‘result’ with type ‘int *’
+   65 |                        int result[]) {
+      |                        ~~~~^~~~~~~~
+exercises.c:70:12: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   70 |     return 1;
+      |            ^
+exercises.c:64:6: note: declared here
+   64 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:83:23: error: ‘arreglo’ undeclared (first use in this function)
+   83 |         result[k++] = arreglo[i++];
+      |                       ^~~~~~~
+exercises.c:86:23: error: ‘arreglo2’ undeclared (first use in this function)
+   86 |         result[k++] = arreglo2[j++];
+      |                       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a2048e6
