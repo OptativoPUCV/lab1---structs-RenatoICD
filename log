@@ -872,3 +872,24 @@ Mon 18 Mar 2024 11:29:42 AM UTC:
  tests:  0|3
 total_score: 40/70
 28b79e2
+Mon 18 Mar 2024 11:32:43 AM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:22: error: expected expression before ‘[’ token
+   60 |   int nuevoArreglo = [];
+      |                      ^
+exercises.c:64:23: error: subscripted value is neither array nor pointer nor vector
+   64 |           nuevoArreglo[j++] = arr[i];
+      |                       ^
+exercises.c:68:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   68 |   return nuevoArreglo;
+      |          ^~~~~~~~~~~~
+exercises.c:72:10: error: ‘newArr’ undeclared (first use in this function)
+   72 |   return newArr;
+      |          ^~~~~~
+exercises.c:72:10: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+0284f51
