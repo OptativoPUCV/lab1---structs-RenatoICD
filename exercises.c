@@ -51,6 +51,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
   
   
+  
   return NULL; 
 
 }
@@ -131,10 +132,10 @@ typedef struct {
 
 void inicializarLibro(Libro *libro, const char *titulo, const char nombreAutor, int anioNacimiento, int anioPublicacion) {
 
-  strcpy(libro->titulo, titulo);
-  strcpy(libro->autor.nombreAutor, nombreAutor);
-  libro->autor.anioNacimiento = anioNacimiento;
-  libro->anioPublicacion = anioPublicacion;
+  // strcpy(libro->titulo, titulo);
+  // strcpy(libro->autor.nombre, nombreAutor);
+  // libro->autor.anioNacimiento = anioNacimiento;
+  // libro->anioPublicacion = anioPublicacion;
   
 
 }
