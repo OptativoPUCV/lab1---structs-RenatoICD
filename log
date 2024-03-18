@@ -384,3 +384,15 @@ exercises.c:66:7: error: unused variable ‘newsize’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 19375a4
+Mon 18 Mar 2024 10:35:55 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:69:14: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   69 |   while (i < size && j < size2) {
+      |              ^~~~
+      |              size2
+exercises.c:69:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+cb2f5ea
