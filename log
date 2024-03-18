@@ -866,3 +866,9 @@ exercises.c:143:68: note: expected ‘char’ but argument is of type ‘const c
 cc1: all warnings being treated as errors
 Compilation failed
 3e3f19a
+Mon 18 Mar 2024 11:29:42 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+28b79e2
